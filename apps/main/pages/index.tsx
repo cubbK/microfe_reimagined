@@ -1,5 +1,16 @@
-export { default } from '@acme/pages/home'
-// `getStaticProps` and other data fetching methods are not imported from the page
-// to make sure dead code elimination works. This way `getStaticProps` will only be
-// included in the server build
-export { getStaticProps } from '@acme/pages/home/data'
+import Header from '@micro/header-microfe'
+import Main from '@micro/main-microfe'
+import * as styles from './index.styles'
+
+export default function Index() {
+  return (
+    <div className={styles.grid}>
+      <div className={styles.header}>
+        <Header />
+      </div>
+      <div className={styles.main}>
+        <Main />
+      </div>
+    </div>
+  )
+}
