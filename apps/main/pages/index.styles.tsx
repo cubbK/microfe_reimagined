@@ -16,3 +16,8 @@ export const main = css`
   grid-area: main;
   background-color: pink;
 `
+
+export const notReact = css`
+  grid-area: 'not-react';
+  background-color: aqua;
+`
