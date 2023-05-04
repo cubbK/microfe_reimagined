@@ -1,23 +1,23 @@
-import { css } from '@emotion/css'
-
-export const grid = css`
+.grid {
   display: grid;
   grid-template-areas:
     'header header header header'
     'main main . not-react';
   grid-template-rows: 1fr 5fr;
   height: 90vh;
-`
-export const header = css`
+}
+
+.header {
   grid-area: header;
   background-color: aliceblue;
-`
-export const main = css`
+}
+
+.main {
   grid-area: main;
   background-color: pink;
-`
+}
 
-export const notReact = css`
+.notReact {
   grid-area: 'not-react';
   background-color: aqua;
-`
+}
