@@ -3,7 +3,7 @@ import Main from '@micro/main-microfe'
 import styles from '../helpers/index.styles.module.css'
 import MicroLoader from 'helpers/MicroLoader'
 import React from 'react'
-// @ts-ignore
+// @ts-ignore also can be in a completely separate repo, it's just an npm package
 import rawScriptSvelte from 'raw-loader!@micro/svelte-microfe/dist/index.js'
 // @ts-ignore
 import rawScriptVue from 'raw-loader!@micro/vue-microfe/dist/index.js'
