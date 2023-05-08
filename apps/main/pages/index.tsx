@@ -5,8 +5,10 @@ import MicroLoader from 'helpers/MicroLoader'
 import React from 'react'
 // @ts-ignore also can be in a completely separate repo, it's just an npm package
 import rawScriptSvelte from 'raw-loader!@micro/svelte-microfe/dist/index.js'
+import '@micro/svelte-microfe/dist/index.css'
 // @ts-ignore
 import rawScriptVue from 'raw-loader!@micro/vue-microfe/dist/index.js'
+import '@micro/vue-microfe/dist/index.css'
 
 export default function Index() {
   const [count, setCount] = React.useState(0)
