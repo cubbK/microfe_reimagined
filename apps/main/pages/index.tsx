@@ -3,7 +3,8 @@ import Main from '@micro/main-microfe'
 import styles from '../helpers/index.styles.module.css'
 import MicroLoader from 'helpers/MicroLoader'
 import React from 'react'
-// @ts-ignore also can be in a completely separate repo, it's just an npm package
+// In principle it is possible to make a custom webpack plugin for all this
+// @ts-ignore also can be imported from a different repo
 import rawScriptSvelte from 'raw-loader!@micro/svelte-microfe/dist/index.js'
 import '@micro/svelte-microfe/dist/index.css'
 // @ts-ignore
@@ -24,10 +25,10 @@ export default function Index() {
           count is {count} from react
         </button>
       </div>
-      <div className={styles.notReact}>
+      <div className={styles.svelte}>
         <MicroLoader id="@micro/svelte-microfe" jsRaw={rawScriptSvelte} />
       </div>
-      <div className={styles.notReact}>
+      <div className={styles.vue}>
         <MicroLoader id="microfe-vue-microfe" jsRaw={rawScriptVue} />
       </div>
     </div>

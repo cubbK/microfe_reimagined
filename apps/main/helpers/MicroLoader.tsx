@@ -1,6 +1,8 @@
-// @ts-ignore
 import React from 'react'
 
+// Almost all the current fronend frameworks generate a bundle that hooks onto a container, usually a div with a specific id. My idea here is to let them: create the div, append the script and let it do its thing. That's how we achieve running svelte/vue/angular apps in react.
+
+// Probably naive but it works ;D
 export default function MicroLoader({
   jsRaw,
   id,

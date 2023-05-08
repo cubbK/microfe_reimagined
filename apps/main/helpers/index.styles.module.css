@@ -2,7 +2,7 @@
   display: grid;
   grid-template-areas:
     'header header header header'
-    'main main . not-react';
+    'main main vue svelte';
   grid-template-rows: 1fr 5fr;
   height: 90vh;
 }
@@ -17,7 +17,12 @@
   background-color: pink;
 }
 
-.notReact {
-  grid-area: 'not-react';
+.svelte {
+  grid-area: 'svelte';
   background-color: aqua;
+}
+
+.vue {
+  grid-area: 'vue';
+  background-color: orange;
 }
