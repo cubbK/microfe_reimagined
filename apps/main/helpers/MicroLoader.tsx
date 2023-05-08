@@ -10,6 +10,9 @@ export default function MicroLoader({
 }) {
   const [text, setText] = React.useState('')
 
+  // Different bundles may use the same variable names. To avoid clashes we wrap the bundle in a function that is immediately invoked. This happens because <script> tags are not scoped, the variables are global.
+
+  // We use an useEffect to run this only on client. More investigation needed for ssr
   React.useEffect(() => {
     setText(`(function(){${jsRaw}})()`)
   }, [])
