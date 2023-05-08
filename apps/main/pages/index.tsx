@@ -2,13 +2,14 @@ import Header from '@micro/header-microfe'
 import Main from '@micro/main-microfe'
 import styles from '../helpers/index.styles.module.css'
 import MicroLoader from 'helpers/MicroLoader'
-
+import React from 'react'
 // @ts-ignore
 import rawScriptSvelte from 'raw-loader!@micro/svelte-microfe/dist/index.js'
 // @ts-ignore
 import rawScriptVue from 'raw-loader!@micro/vue-microfe/dist/index.js'
 
 export default function Index() {
+  const [count, setCount] = React.useState(0)
   return (
     <div className={styles.grid}>
       <div className={styles.header}>
@@ -16,6 +17,10 @@ export default function Index() {
       </div>
       <div className={styles.main}>
         <Main />
+        <button onClick={() => setCount(count + 1)}>
+          {' '}
+          count is {count} from react
+        </button>
       </div>
       <div className={styles.notReact}>
         <MicroLoader id="@micro/svelte-microfe" jsRaw={rawScriptSvelte} />
