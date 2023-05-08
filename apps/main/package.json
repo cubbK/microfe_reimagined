@@ -15,6 +15,7 @@
     "@micro/main-microfe": "workspace:*",
     "@micro/svelte-microfe": "workspace:*",
     "next": "latest",
+    "raw-loader": "^4.0.2",
     "react": "latest",
     "react-dom": "latest",
     "svelte": "^3.58.0",

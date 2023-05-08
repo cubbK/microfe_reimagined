@@ -2,9 +2,7 @@ import Header from '@micro/header-microfe'
 import Main from '@micro/main-microfe'
 import styles from '../helpers/index.styles.module.css'
 import { reactify } from 'svelte-preprocess-react'
-import AppSvelteRaw from '@micro/svelte-microfe/src/App.svelte'
-
-const AppSvelte = reactify(AppSvelteRaw)
+import SvelteLoader from 'helpers/SvelteLoader'
 
 export default function Index() {
   return (
@@ -16,7 +14,7 @@ export default function Index() {
         <Main />
       </div>
       <div className={styles.notReact}>
-        <AppSvelte />
+        <SvelteLoader />
       </div>
     </div>
   )
