@@ -5,6 +5,8 @@ import MicroLoader from 'helpers/MicroLoader'
 
 // @ts-ignore
 import rawScriptSvelte from 'raw-loader!@micro/svelte-microfe/dist/index.js'
+// @ts-ignore
+import rawScriptVue from 'raw-loader!@micro/vue-microfe/dist/index.js'
 
 export default function Index() {
   return (
@@ -17,6 +19,9 @@ export default function Index() {
       </div>
       <div className={styles.notReact}>
         <MicroLoader id="@micro/svelte-microfe" jsRaw={rawScriptSvelte} />
+      </div>
+      <div className={styles.notReact}>
+        <MicroLoader id="microfe-vue-microfe" jsRaw={rawScriptVue} />
       </div>
     </div>
   )

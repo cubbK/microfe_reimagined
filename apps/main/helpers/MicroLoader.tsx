@@ -11,7 +11,7 @@ export default function MicroLoader({
   const [text, setText] = React.useState('')
 
   React.useEffect(() => {
-    setText(jsRaw)
+    setText(`(function(){${jsRaw}})()`)
   }, [])
 
   return (

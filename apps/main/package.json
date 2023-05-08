@@ -14,6 +14,8 @@
     "@micro/header-microfe": "workspace:*",
     "@micro/main-microfe": "workspace:*",
     "@micro/svelte-microfe": "workspace:*",
+    "@micro/vue-microfe": "workspace:*",
+    "file-loader": "^6.2.0",
     "next": "latest",
     "raw-loader": "^4.0.2",
     "react": "latest",

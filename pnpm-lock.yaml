@@ -28,6 +28,12 @@ importers:
       '@micro/svelte-microfe':
         specifier: workspace:*
         version: link:../../packages/svelte-microfe
+      '@micro/vue-microfe':
+        specifier: workspace:*
+        version: link:../../packages/vue-microfe
+      file-loader:
+        specifier: ^6.2.0
+        version: 6.2.0(webpack@5.82.0)
       next:
         specifier: latest
         version: 13.4.1(react-dom@18.2.0)(react@18.2.0)
@@ -2618,6 +2624,17 @@ packages:
     dependencies:
       flat-cache: 3.0.4
     dev: true
+
+  /file-loader@6.2.0(webpack@5.82.0):
+    resolution: {integrity: sha512-qo3glqyTa61Ytg4u73GultjHGjdRyig3tG6lPtyX/jOEJvHif9uB0/OCI2Kif6ctF3caQTW2G5gym21oAsI4pw==}
+    engines: {node: '>= 10.13.0'}
+    peerDependencies:
+      webpack: ^4.0.0 || ^5.0.0
+    dependencies:
+      loader-utils: 2.0.4
+      schema-utils: 3.1.2
+      webpack: 5.82.0
+    dev: false
 
   /file-type@17.1.6:
     resolution: {integrity: sha512-hlDw5Ev+9e883s0pwUsuuYNu4tD7GgpUnOvykjv1Gya0ZIjuKumthDRua90VUn6/nlRKAjcxLUnHNTIUWwWIiw==}
