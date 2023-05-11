@@ -24,6 +24,9 @@
     "dev": {
       "cache": false
     },
+    "dev-proxy": {
+      "cache": false
+    },
     "start": {
       "cache": false
     },
