@@ -2,7 +2,12 @@ const { DOCS_URL } = process.env
 const path = require('path')
 module.exports = {
   async rewrites() {
-    return []
+    return [
+      {
+        source: '/about',
+        destination: 'http://localhost:3001', // Proxy to nuxt
+      },
+    ]
   },
   webpack: (
     config,
