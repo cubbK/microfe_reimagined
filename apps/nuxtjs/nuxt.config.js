@@ -3,6 +3,9 @@ export default {
   server: {
     port: 3001, // default: 3000
   },
+  router: {
+    base: '/about/',
+  },
   head: {
     title: 'nuxtjs',
     htmlAttrs: {

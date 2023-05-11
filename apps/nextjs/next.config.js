@@ -5,7 +5,11 @@ module.exports = {
     return [
       {
         source: '/about',
-        destination: 'http://localhost:3001', // Proxy to nuxt
+        destination: 'http://localhost:3001/about/', // Proxy to nuxt
+      },
+      {
+        source: '/about/_nuxt/:path*',
+        destination: `http://localhost:3001/about/_nuxt/:path*`, // Proxy to nuxt
       },
     ]
   },

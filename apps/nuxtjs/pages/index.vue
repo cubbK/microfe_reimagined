@@ -1,11 +1,20 @@
-<template>
-  <div>
-    <h1>About page from nuxt</h1>
-  </div>
-</template>
-
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'Index',
+  data() {
+    return {
+      count: 0,
+    }
+  },
 }
 </script>
+
+<template>
+  <button @click="count++">Count is: {{ count }} from nuxt</button>
+</template>
+
+<style scoped>
+button {
+  font-weight: bold;
+}
+</style>
