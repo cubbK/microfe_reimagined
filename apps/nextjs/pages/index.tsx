@@ -33,16 +33,18 @@ export default function Index(props: any) {
         <MicroLoader id="microfe-vue-microfe" jsRaw={rawScriptVue} />
       </div>
       <div className={styles.vue}>
-        <MicroLoaderSSR
+        {/** Broken. It redirects to localhost:3001/about when the scripts load. So close to working tho */}
+        {/* <MicroLoaderSSR
           id="nuxt-about"
           body={props.aboutPage.body}
           scriptsUrls={props.aboutPage.scriptsUrls}
-        />
+        /> */}
       </div>
     </div>
   )
 }
 
+// broken, used for nuxt inside next ssr
 export async function getServerSideProps(context: any) {
   return {
     props: {
