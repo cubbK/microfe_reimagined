@@ -37,6 +37,8 @@ go to localhost:3005/next or localhost:3005/nuxt
 
 ## My conclusion
 
+I spent 80% of my time trying to load horizontally different frameworks in nextjs. Everything else felt like usual. Regular nextjs microfrontend. Regular proxy server
+
 It felt refreshing knowing we can use regular next and nuxt etc without worying we're gonna be behind features like good dx, documentation, edge etc.
 
 Page by page support of different libs feels like a good compromise.
