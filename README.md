@@ -2,7 +2,7 @@
 
 I set myself the task to see how far I can get with already existing popular frameworks to do microfrontends.
 
-DISCLAIMER: this is an exercise and not meant to compete with anyone
+**DISCLAIMER**: this is an exercise and not meant to compete with anyone, prove or suggest anything. It's just a fun experiment.
 
 ## Requirements:
 
@@ -15,9 +15,9 @@ DISCLAIMER: this is an exercise and not meant to compete with anyone
 ## What I got in the end:
 
 - all the goodies of next and nuxt.
-- First class support for page by page change of libs(e.g /about can be react, /contact can be vue) using a proxy
+- First class support for page by page change of libs(e.g /about can be react microfrontends , /contact can be vue microfrontends)
 - Second class support for horizontal change of libs (you caaan load a vue microfrontend in nextjs but without ssr).
-- no need for each team with a microfrontend to do infra. The microfrontend is used as a package.
+- no need for each team with a microfrontend to do infra. The microfrontend is used as a npm package.
 
 ## Getting started
 
