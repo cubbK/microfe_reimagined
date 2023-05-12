@@ -7,8 +7,8 @@ import React from 'react'
 // @ts-ignore also can be imported from a different repo
 import rawScriptSvelte from 'raw-loader!@micro/svelte-microfe/dist/index.js'
 import '@micro/svelte-microfe/dist/index.css'
-// Also in principle it would be better to use https://github.com/devilwjp/veaury and not load built bundles. Unfortunately it veaury breaks with ssr.
-// Also as an alternative a webpack plugin can be used that "builds" on the fly so we don't need to buld the bundles beforehand
+// Also in principle it would be better to use https://github.com/devilwjp/veaury and not load built bundles. Unfortunately in veaury it breaks with ssr.
+// Also as an alternative a webpack plugin can be used that "builds" on the fly so we don't need to build the bundles beforehand and get better dx
 // @ts-ignore
 import rawScriptVue from 'raw-loader!@micro/vue-microfe/dist/index.js'
 import '@micro/vue-microfe/dist/index.css'
