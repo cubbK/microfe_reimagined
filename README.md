@@ -1,6 +1,6 @@
-# Microfontends Reinvented - Using Next.js as a base
+# Experimenting with microfrontends
 
-Features:
+## Features:
 
 - All the nextjs goodies (ssr, edge, routing, react server components, free improvements)
 - posibility to run non react microfrontends (e.g. svelte, vue, vanilla js)
@@ -8,11 +8,13 @@ Features:
 ## Getting started
 
 ```
+nvm use
 pnpm install
 pnpm build
-pnpm dev
+pnpm dev-proxy
+go to localhost:3000 for nextjs or localhost:3000/about for nuxt
 ```
 
 ## Good starting point
 
-`apps/main/pages/index.tsx`
+`apps/nextjs/pages/index.tsx`
