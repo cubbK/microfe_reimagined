@@ -2,6 +2,8 @@
 
 I set myself the task to see how far I can get with already existing popular frameworks to do microfrontends.
 
+<img width="719" alt="image" src="https://github.com/cubbK/microfe_reimagined/assets/3717949/deb93d6c-5708-4449-9de7-8b461acb91f5">
+
 **DISCLAIMER**: this is an exercise and not meant to compete with anyone, prove or suggest anything. It's just a fun experiment.
 
 ## Requirements:
