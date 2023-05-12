@@ -4,7 +4,7 @@
     'header header header header'
     'main main vue svelte';
   grid-template-rows: 1fr 5fr;
-  height: 90vh;
+  height: 25vh;
 }
 
 .header {
