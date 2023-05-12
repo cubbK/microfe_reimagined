@@ -10,7 +10,8 @@ import '@micro/svelte-microfe/dist/index.css'
 // @ts-ignore
 import rawScriptVue from 'raw-loader!@micro/vue-microfe/dist/index.js'
 import '@micro/vue-microfe/dist/index.css'
-import MicroLoaderSSR, { fetchSSRRespose } from 'helpers/MicroLoaderSSR'
+import { fetchSSRRespose } from 'helpers/__MicroLoaderSSR'
+import MicroLoaderSSR from 'helpers/MicroLoaderSSR'
 
 export default function Index(props: any) {
   const [count, setCount] = React.useState(0)
@@ -33,12 +34,12 @@ export default function Index(props: any) {
         <MicroLoader id="microfe-vue-microfe" jsRaw={rawScriptVue} />
       </div>
       <div className={styles.vue}>
-        {/** Broken. It redirects to localhost:3001/about when the scripts load. So close to working tho */}
-        {/* <MicroLoaderSSR
+        {/** Broken. It doesn't hydrate */}
+        <MicroLoaderSSR
           id="nuxt-about"
           body={props.aboutPage.body}
           scriptsUrls={props.aboutPage.scriptsUrls}
-        /> */}
+        />
       </div>
     </div>
   )
@@ -50,7 +51,7 @@ export async function getServerSideProps(context: any) {
     props: {
       aboutPage: await fetchSSRRespose(
         'nuxt-about',
-        'http://localhost:3000/about'
+        'http://localhost:3005/nuxt'
       ),
     }, // will be passed to the page component as props
   }

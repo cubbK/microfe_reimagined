@@ -12,8 +12,6 @@ const proxyRoutes = {
 
 // Create the HTTP server that will act as the reverse proxy
 const server = http.createServer((req, res) => {
-  console.log(Object.entries(proxyRoutes))
-  console.log(req.url)
   // Find the corresponding target port for the requested path
   const route = Object.entries(proxyRoutes).find(([path]) =>
     req.url.startsWith(path)
