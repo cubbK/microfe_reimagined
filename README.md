@@ -12,7 +12,7 @@ nvm use
 pnpm install
 pnpm build
 pnpm dev-proxy
-go to localhost:3000 for nextjs or localhost:3000/about for nuxt
+go to localhost:3005/next or localhost:3005/nuxt
 ```
 
 ## Good starting point

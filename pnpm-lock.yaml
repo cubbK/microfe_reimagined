@@ -111,6 +111,15 @@ importers:
         specifier: ^2.7.10
         version: 2.7.10
 
+  apps/proxy:
+    dependencies:
+      http-proxy:
+        specifier: ^1.18.1
+        version: 1.18.1
+      nodemon:
+        specifier: ^2.0.22
+        version: 2.0.22
+
   packages/header-microfe:
     dependencies:
       next:
